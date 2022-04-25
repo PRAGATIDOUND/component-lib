@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "rand bold";
+    src: url("../assets/fonts/Rand-Bold.otf");
+  }
+/* .inputtext{
+
+display: flex;
+flex-direction: row;
+align-items: center;
+border: 1px solid #9F9F9F;
+box-sizing: border-box;
+border-radius: 3px;
+height: 40px;
+outline: none;
+min-width: 272px;
+}
+input[type=text]:hover{
+    background-color: #F5F5F5;
+}
+input[type=text]:focus{
+    outline: none;
+    border: 1.5px solid #B989FF;
+}
+input[type=text]:active{
+    outline: none;
+    border: 1px solid #9F9F9F;  
+} */
+.box{
+    width: 240px;
+    height: 24px; 
+    background-color: white;
+    border-radius:3px ;
+    display: flex;
+flex-direction: row;
+align-items: center;
+outline: 1px solid #9F9F9F;
+padding: 8px 16px;
+}
+.box >button{
+    height: 24px;
+    width:24px;
+    background-color: white;
+    border: none;
+}
+.box > input{
+    border: none;
+    outline: none;
+    padding: 0px;
+    height: 24px;
+    flex: 1;
+}
+
+.close{
+    width: 24px;
+    height: 24px;
+    padding:0px;
+   
+    filter: invert(38%) sepia(0%) saturate(0%) hue-rotate(355deg) brightness(93%) contrast(90%);
+}
+
+.box:focus-within {
+    outline: 1.5px solid #B989FF;
+}
+.box:hover ,.box:hover input {
+    background-color: #F5F5F5;
+}
+  
+a{
+    height: 24px;
+    width: 24px;   
+    text-align: center; 
+    padding-right: 8px;
+    
+}
+.search{
+    margin-top: 3px;
+    margin-left: 4px;
+    margin-right: 2.69px;
+    margin-bottom: 1.5px;
+}
+.searchBox{
+    padding-left: 8px;
+    width: 248px;
+}
+.closebtn{
+    padding-right: 0px;
+}

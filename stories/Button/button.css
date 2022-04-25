@@ -1,0 +1,201 @@
+
+@font-face {
+  font-family: "rand bold";
+  src: url("../assets/fonts/Rand-Bold.otf");
+}
+
+.button {
+  font-family: 'rand bold';
+  /* font-style: normal;  */
+
+line-height: 16px;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+   position: absolute;
+   letter-spacing: 0.02em;
+height: 32px;
+top: 21.2px;
+border-radius: 4px;
+}
+
+.button--primary {
+  color: white;
+  background-color: #4F00C1;
+  display: flex;
+flex-direction: row;
+font-size: 12px;
+justify-content: center;
+align-items: center;
+font-weight: 700;
+padding:8px 16px;
+/* width: 76px; */
+left: 20px;
+top: 21.2px;
+}
+.button--primary:hover:not([disabled]):not(:focus) {
+  /* width: 68px; */
+  background: #6B04FF;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.button--primary:focus:not([disabled]){
+
+  height: 32px;
+ outline: 2px solid #B989FF ;  
+}
+.button--primary:active:not([disabled]){
+  background: #6B04FF;
+
+  border: none ;
+  
+}
+.button:disabled{
+  background: #F5F5F5;
+  color: #C0C0C0;
+  
+  
+}
+
+.button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+
+.button--critical{
+  padding: 16px;
+  background: #E34033;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-weight: 700;
+height: 32px;
+color: #FFFFFF;
+text-align: center;
+top: 21.2px;
+padding:8px 16px;
+left: 20px;
+}
+
+.button--critical:hover:not([disabled]):not(:focus){
+  background: #E9665B;
+  opacity: 0.8;
+}
+.button--critical:focus:not([disabled]){
+  outline: 1px solid #AF1509 ;
+  box-sizing: border-box;
+  
+}
+.button--critical:active:not([disabled]){
+  background: #E9665B;
+  outline: none ;
+  box-sizing: none;
+  outline-offset: none;
+}
+
+.button-onlyIcon{
+height: 32px;
+}
+
+.button-onlyIcon:hover:not([disabled]):not(:focus){
+  background: #6B04FF;
+   opacity: 0.8;
+  cursor: pointer;
+}
+.button--critical.button-onlyIcon:hover:not([disabled]):not(:focus){
+  background:#E9665B;
+
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.button--textPrimary{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+padding: 16px;
+background: #FFFFFF;
+position: absolute;
+
+height: 32px;
+left: 20px;
+top: 20px;
+color: #4F00C1;
+}
+ 
+.button--textPrimary:hover:not([disabled]):not(:focus){
+ 
+  background: #F5F5F5;
+opacity: 0.8;
+}
+.button--textPrimary:focus:not([disabled]){
+outline: 2px solid #B989FF;
+box-sizing: border-box;
+
+}
+.button--textPrimary:active:not([disabled]){
+  
+  border: none;
+  background: #F5F5F5;
+}
+/* .button--textPrimary.button-onlyIcon{
+ 
+height: 32px;
+padding: 8px;
+} */
+.button--textPrimary.button-onlyIcon:hover:not([disabled]):not(:focus){
+  background: #F5F5F5;
+opacity: 0.8;
+}
+.button--textPrimary.button-onlyIcon:focus:not([disabled]){
+  outline: 2px solid #B989FF;
+  box-sizing: border-box;
+
+}
+.heartimage{
+width:14px;
+height: 12.73px;
+}
+.closeimage{
+  width: 16px;
+height: 16px;
+}
+.checkimage{
+  width: 16px;
+height: 16px;
+padding-right: 8px;
+
+}
+.button-onlyIconPadding{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 0px;
+}
+.addimagec{
+  width: 16px;
+height: 16px;
+filter:  brightness(0) invert(1);
+}
+.button:disabled .closeimage  {
+  filter: brightness(0) saturate(100%) invert(84%) sepia(0%) saturate(5921%) hue-rotate(76deg) brightness(92%) contrast(89%);
+  
+}
+.button:disabled .checkimage {
+  filter: brightness(0) saturate(100%) invert(84%) sepia(0%) saturate(5921%) hue-rotate(76deg) brightness(92%) contrast(89%);
+  
+}
+.button:disabled .heartimage  {
+  filter: brightness(0) saturate(100%) invert(84%) sepia(0%) saturate(5921%) hue-rotate(76deg) brightness(92%) contrast(89%);
+  
+}
+.button:disabled .addimagec {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(0%) saturate(171%) hue-rotate(138deg) brightness(86%) contrast(85%);
+}

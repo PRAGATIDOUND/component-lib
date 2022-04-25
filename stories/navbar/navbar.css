@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: "rand medium";
+    src: url("../assets/fonts/Rand-Medium.otf");
+  }
+  @font-face {
+    font-family: "rand regular";
+    src: url("../assets/fonts/Rand-Regular.otf");
+  }
+  .homebase-side-nav{
+      font-family: "rand medium";
+    height: 968px;
+    background-color: #f5f5f5;
+    transition: width .15s linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .homebase-side-nav[data-size=full]{
+    width: 208px;
+  }
+  .homebase-side-nav[data-size=min]{
+    width: 76px;
+  }
+  .homebase-side-nav[data-size=min] .homebase-side-nav_link .homebase-side-nav_toggle img[alt=toggle]{
+      transform: rotate(180deg);
+  }
+ button.homebase-side-nav_toggle{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    margin-top: 4px;
+    transition:  .15s linear;
+  }
+  .homebase-side-nav[data-size=full] button{
+  
+      margin-left: 168px;
+  }
+  .homebase-side-nav[data-size=min] button{
+  
+     margin-left: 36px;
+ }
+ .naked {
+     color: #5D5D5D;
+     text-align: justify;
+     text-decoration: none;
+ }
+ .homebase-side-nav_link  {
+  margin-bottom: 4px;
+     height: 48px;
+ }
+  img.icon-link {
+     height: 24px;
+     width:24px;
+     margin-top: 12px;
+     margin-bottom: 12px;
+     margin-left: 34px;
+ }
+ .middle>*{
+   vertical-align: middle;
+ }
+ span{
+  overflow: hidden; 
+   margin-left: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+ }
