@@ -1,0 +1,24 @@
+.small{
+    height: 16px;
+    width:16px;
+    stroke-width: 1.2px;
+    padding: 8px;
+}
+.medium{
+    height: 24px;
+    width:24px;
+    stroke-width: 1.2px;
+    padding: 8px;
+}
+.large{
+    height: 32px;
+    width:32px;
+    stroke-width: 1.5px;
+    padding: 8px;
+}
+.x-large{
+    height: 40px;
+    width:40px;
+    stroke-width: 2px;
+    padding: 8px;
+}

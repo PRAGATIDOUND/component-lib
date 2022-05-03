@@ -1,0 +1,1 @@
+export {ReactComponent as Select} from "../assets/toolbarIcon/Select.svg"

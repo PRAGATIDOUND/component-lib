@@ -12,11 +12,10 @@ line-height: 16px;
   border: 0;
   border-radius: 3em;
   cursor: pointer;
-  display: inline-block;
-   position: absolute;
+  /* display: inline-block; */
    letter-spacing: 0.02em;
 height: 32px;
-top: 21.2px;
+/* top: 21.2px; */
 border-radius: 4px;
 }
 
@@ -31,8 +30,8 @@ align-items: center;
 font-weight: 700;
 padding:8px 16px;
 /* width: 76px; */
-left: 20px;
-top: 21.2px;
+/* left: 20px; */
+/* top: 21.2px; */
 }
 .button--primary:hover:not([disabled]):not(:focus) {
   /* width: 68px; */
@@ -75,9 +74,9 @@ font-weight: 700;
 height: 32px;
 color: #FFFFFF;
 text-align: center;
-top: 21.2px;
+/* top: 21.2px; */
 padding:8px 16px;
-left: 20px;
+/* left: 20px; */
 }
 
 .button--critical:hover:not([disabled]):not(:focus){
@@ -122,11 +121,11 @@ font-size: 14px;
 line-height: 16px;
 padding: 16px;
 background: #FFFFFF;
-position: absolute;
+
 
 height: 32px;
-left: 20px;
-top: 20px;
+/* left: 20px;
+top: 20px; */
 color: #4F00C1;
 }
  
@@ -198,4 +197,7 @@ filter:  brightness(0) invert(1);
 }
 .button:disabled .addimagec {
   filter: brightness(0) saturate(100%) invert(92%) sepia(0%) saturate(171%) hue-rotate(138deg) brightness(86%) contrast(85%);
+}
+.top-nav-btn{
+
 }

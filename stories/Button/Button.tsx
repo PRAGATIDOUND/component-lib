@@ -1,12 +1,10 @@
 import React from 'react';
 import './button.css';
 interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
+  
   primary?: boolean;
+  className:string;
  containOnlyIcon?:boolean;
-  // textPrimary?:boolean;
   size?: 'small' | 'large';
   iconClass:string;
   source:string;
@@ -15,12 +13,9 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({
   primary ,
-  // textPrimary,
+  className,
   containOnlyIcon=false,
   size = 'small',
   iconClass,
@@ -44,14 +39,16 @@ if(label!=""){
 } 
 
   return (
+    <>
     <button
       type="button"
-      className={['button', `button--${size}`, mode,image,btnIconPadding].join(' ')}
+      className={['button',className ,`button--${size}`, mode,image,btnIconPadding].join(' ')}
       {...props} 
     > 
     {abc&&<img className={[iconClass ].join('')}  style={{paddingRight:'8px'}} src={source} alt="" />}
       {label}
     </button>
+    </>
   );
 
 };
